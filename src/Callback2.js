@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import './Callback.css';
 
-class Callback extends Component {
-  
-    constructor(props){
-      super(props);
-      this.state={
+class Callback2 extends Component {
+        
+    
+    state={
         isTurnedOn: true,
       }
-      // Para que o this funcione dentro da callback, o 'bind' é necessário aqui
-      this.handleClick = this.handleClick.bind(this);
-    }
-  
+      
     handleClick() {
       this.setState(state => ({
         isTurnedOn: !state.isTurnedOn
@@ -21,7 +17,7 @@ class Callback extends Component {
     return(
       <div className="app-container">
         <article>
-          <button onClick={this.handleClick}>
+          <button onClick={(e)=>this.handleClick(e)}>
             <p>
             {this.state.isTurnedOn ? 'ON' : 'OFF'}
             </p>
@@ -32,4 +28,4 @@ class Callback extends Component {
   }
 
 }
-export default Callback;
+export default Callback2;

@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.app-container form{
+.app-container article{
   margin-top: 15%;
   display: flex;
   width: 100%;
@@ -13,11 +13,11 @@
   flex-direction: column;
 }
 
-.app-container form button{
-  border-radius: 2px 2px 2px;
+.app-container article button{
+  border-radius: 5px 5px 5px;
   background: #DF4723;
 }
-.app-container form button p{
+.app-container article button p{
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
